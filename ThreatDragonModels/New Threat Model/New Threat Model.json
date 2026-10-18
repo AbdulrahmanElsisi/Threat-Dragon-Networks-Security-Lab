@@ -44,8 +44,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
-                "fb5eb428-5628-470b-9c32-a0ab864c9049"
+                "fb5eb428-5628-470b-9c32-a0ab864c9049",
+                "776a7fd4-0c34-49b6-8383-d331091b9092"
               ],
               "containedElements": [
                 "8547967d-d4f9-478a-a609-65d5ff57ed2b",
@@ -79,8 +79,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
-                "8dc12b8d-3705-4514-935f-da94dad365ca"
+                "8dc12b8d-3705-4514-935f-da94dad365ca",
+                "776a7fd4-0c34-49b6-8383-d331091b9092"
               ],
               "containedElements": [
                 "52a8db40-6801-4c3f-835a-752799e50380"
@@ -486,75 +486,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F2\nCiphertext\n+nonce",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "5b99349f-0927-45de-86e5-3a8e9b3b1519",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "f100fa65-9572-4933-acf2-cd9666b8b498",
-                "025513d5-cc5a-4952-a20c-a05e50716f8c"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "F2\nCiphertext\n+nonce"
-            ],
-            "id": "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
-            "source": {
-              "cell": "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
-              "port": "a2e320f5-e37f-4742-942f-1fb8b57e8b58"
-            },
-            "target": {
-              "cell": "52a8db40-6801-4c3f-835a-752799e50380",
-              "port": "60451e0e-1002-4ffc-ab78-be7aa6e87f92"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "F5\nCiphertext\n+nonce",
               "description": "",
               "outOfScope": false,
@@ -688,6 +619,56 @@
             "target": {
               "cell": "cb89cfdd-272c-4802-869c-8b2f5476931b",
               "port": "c39bc678-f9e3-4d9a-8b91-ed0fbc644795"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F2\nCiphertext\n+nonce",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f100fa65-9572-4933-acf2-cd9666b8b498",
+                "025513d5-cc5a-4952-a20c-a05e50716f8c"
+              ]
+            },
+            "labels": [
+              "F2\nCiphertext\n+nonce"
+            ],
+            "id": "776a7fd4-0c34-49b6-8383-d331091b9092",
+            "source": {
+              "cell": "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
+              "port": "a2e320f5-e37f-4742-942f-1fb8b57e8b58"
+            },
+            "target": {
+              "cell": "52a8db40-6801-4c3f-835a-752799e50380",
+              "port": "60451e0e-1002-4ffc-ab78-be7aa6e87f92"
             },
             "vertices": []
           },
@@ -1178,6 +1159,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 3
   }
 }
