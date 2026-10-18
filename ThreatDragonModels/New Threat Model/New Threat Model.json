@@ -98,7 +98,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Trust Boundary"
+                "text": "Trust Boundary 3:Faculty Printer room"
               }
             },
             "visible": true,
@@ -107,7 +107,7 @@
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Trust Boundary",
+              "name": "Trust Boundary 3:Faculty Printer room",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
