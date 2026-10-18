@@ -1036,6 +1036,9 @@
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Printer Operator"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -1130,7 +1133,7 @@
             "zIndex": 14,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor",
+              "name": "Printer Operator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
