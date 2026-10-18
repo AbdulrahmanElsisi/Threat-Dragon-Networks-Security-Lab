@@ -43,7 +43,10 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
+                "fb5eb428-5628-470b-9c32-a0ab864c9049"
+              ],
               "containedElements": [
                 "8547967d-d4f9-478a-a609-65d5ff57ed2b",
                 "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
@@ -75,9 +78,45 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
+                "8dc12b8d-3705-4514-935f-da94dad365ca"
+              ],
               "containedElements": [
                 "52a8db40-6801-4c3f-835a-752799e50380"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1041,
+              "y": 125.00000000000148
+            },
+            "size": {
+              "width": 330,
+              "height": 300
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "d96f6db9-0f84-40df-8aac-dfa91382a87b",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "8dc12b8d-3705-4514-935f-da94dad365ca",
+                "fb5eb428-5628-470b-9c32-a0ab864c9049"
+              ],
+              "containedElements": [
+                "8412b2ee-cc94-44c4-a994-d8298cef6e80"
               ]
             }
           },
@@ -413,6 +452,165 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F2\nCiphertext\n+nonce",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f100fa65-9572-4933-acf2-cd9666b8b498",
+                "025513d5-cc5a-4952-a20c-a05e50716f8c"
+              ]
+            },
+            "labels": [
+              "F2\nCiphertext\n+nonce"
+            ],
+            "id": "c2e1d1b1-1b86-4be6-b993-942f2bcf2051",
+            "source": {
+              "cell": "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
+              "port": "a2e320f5-e37f-4742-942f-1fb8b57e8b58"
+            },
+            "target": {
+              "cell": "52a8db40-6801-4c3f-835a-752799e50380",
+              "port": "60451e0e-1002-4ffc-ab78-be7aa6e87f92"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F5\nCiphertext\n+nonce",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "025513d5-cc5a-4952-a20c-a05e50716f8c",
+                "d96f6db9-0f84-40df-8aac-dfa91382a87b"
+              ]
+            },
+            "labels": [
+              "F5\nCiphertext\n+nonce"
+            ],
+            "id": "8dc12b8d-3705-4514-935f-da94dad365ca",
+            "source": {
+              "cell": "52a8db40-6801-4c3f-835a-752799e50380",
+              "port": "c3930acc-7b68-463a-bede-cfdb9c3aabae"
+            },
+            "target": {
+              "cell": "8412b2ee-cc94-44c4-a994-d8298cef6e80",
+              "port": "23374bca-e420-49ad-88fd-54e78b4ce888"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F4\nKey on USB (Courier)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "f100fa65-9572-4933-acf2-cd9666b8b498",
+                "d96f6db9-0f84-40df-8aac-dfa91382a87b"
+              ]
+            },
+            "labels": [
+              "F4\nKey on USB (Courier)"
+            ],
+            "id": "fb5eb428-5628-470b-9c32-a0ab864c9049",
+            "source": {
+              "cell": "7b298d46-686b-408f-9c75-f250caf3549c",
+              "port": "c3930acc-7b68-463a-bede-cfdb9c3aabae"
+            },
+            "target": {
+              "cell": "8412b2ee-cc94-44c4-a994-d8298cef6e80",
+              "port": "23374bca-e420-49ad-88fd-54e78b4ce888"
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 420
+              },
+              {
+                "x": 920,
+                "y": 420
+              }
+            ]
+          },
+          {
             "position": {
               "x": 226,
               "y": 310
@@ -657,6 +855,126 @@
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1111,
+              "y": 250
+            },
+            "size": {
+              "width": 60,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Print\nAgent"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ebb6db3e-1661-4570-aae1-ce28361b81ef"
+                },
+                {
+                  "group": "right",
+                  "id": "a2e320f5-e37f-4742-942f-1fb8b57e8b58"
+                },
+                {
+                  "group": "bottom",
+                  "id": "84312dcb-37ed-41d5-8ccd-2f2eb95c42fc"
+                },
+                {
+                  "group": "left",
+                  "id": "23374bca-e420-49ad-88fd-54e78b4ce888"
+                }
+              ]
+            },
+            "id": "8412b2ee-cc94-44c4-a994-d8298cef6e80",
+            "zIndex": 13,
+            "data": {
+              "type": "tm.Process",
+              "name": "Print\nAgent",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           }
