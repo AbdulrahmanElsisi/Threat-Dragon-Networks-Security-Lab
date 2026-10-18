@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 100,
-              "y": 240
+              "x": 50,
+              "y": 170
             },
             "size": {
               "width": 112.5,
@@ -175,55 +175,8 @@
               "port": "c9b57b4d-28f4-4dbc-9f45-670a9ddf00f9"
             },
             "target": {
-              "x": 210,
-              "y": 270
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "a1a9c099-c576-4417-99e9-cb4e9e264652",
-            "source": {
-              "x": 220,
-              "y": 270
-            },
-            "target": {
-              "x": 410,
-              "y": 270
+              "x": 290,
+              "y": 200
             },
             "vertices": []
           }
