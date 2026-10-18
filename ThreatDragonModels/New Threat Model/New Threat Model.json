@@ -30,7 +30,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Key Vault"
+                "text": "Trust Boundary 1: Exams office"
               }
             },
             "visible": true,
@@ -39,24 +39,16 @@
             "zIndex": -1,
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Key Vault",
+              "name": "Trust Boundary 1: Exams office",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": [
                 "8547967d-d4f9-478a-a609-65d5ff57ed2b",
-                "70bf3cbb-2b93-4ca1-ad12-be8691e981cb"
+                "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
+                "7b298d46-686b-408f-9c75-f250caf3549c"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -342,6 +334,177 @@
               "port": "23374bca-e420-49ad-88fd-54e78b4ce888"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "F3\n256-bit Key",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "F3\n256-bit Key"
+            ],
+            "id": "cc6cc115-46f0-4575-94bd-a67cdf43c9af",
+            "source": {
+              "cell": "7b298d46-686b-408f-9c75-f250caf3549c",
+              "port": "c3930acc-7b68-463a-bede-cfdb9c3aabae"
+            },
+            "target": {
+              "cell": "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
+              "port": "23374bca-e420-49ad-88fd-54e78b4ce888"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 226,
+              "y": 310
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Key vault"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "cf95f2d5-efdf-4ca8-bc19-029984ba7d4a"
+                },
+                {
+                  "group": "right",
+                  "id": "c3930acc-7b68-463a-bede-cfdb9c3aabae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fd72b7ae-9d1c-4f28-9c17-4728fac8504a"
+                },
+                {
+                  "group": "left",
+                  "id": "60451e0e-1002-4ffc-ab78-be7aa6e87f92"
+                }
+              ]
+            },
+            "id": "7b298d46-686b-408f-9c75-f250caf3549c",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Key vault",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
           }
         ]
       }
