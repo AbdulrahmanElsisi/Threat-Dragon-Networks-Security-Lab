@@ -53,6 +53,36 @@
           },
           {
             "position": {
+              "x": 679,
+              "y": 195
+            },
+            "size": {
+              "width": 260,
+              "height": 170
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary 2:Campus Offic"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "025513d5-cc5a-4952-a20c-a05e50716f8c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary 2:Campus Offic",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "52a8db40-6801-4c3f-835a-752799e50380"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 230,
               "y": 190
             },
@@ -493,6 +523,130 @@
             "data": {
               "type": "tm.Store",
               "name": "Key vault",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 749,
+              "y": 250
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Paper Store"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "cf95f2d5-efdf-4ca8-bc19-029984ba7d4a"
+                },
+                {
+                  "group": "right",
+                  "id": "c3930acc-7b68-463a-bede-cfdb9c3aabae"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fd72b7ae-9d1c-4f28-9c17-4728fac8504a"
+                },
+                {
+                  "group": "left",
+                  "id": "60451e0e-1002-4ffc-ab78-be7aa6e87f92"
+                }
+              ]
+            },
+            "id": "52a8db40-6801-4c3f-835a-752799e50380",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Paper Store",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
