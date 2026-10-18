@@ -25,7 +25,7 @@
               "y": 150
             },
             "size": {
-              "width": 750,
+              "width": 710,
               "height": 140
             },
             "attrs": {
@@ -377,17 +377,7 @@
               "cell": "eaa4742b-af01-4e35-8102-c04390cf1100",
               "port": "c39bc678-f9e3-4d9a-8b91-ed0fbc644795"
             },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "position": {
