@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f100fa65-9572-4933-acf2-cd9666b8b498",
             "zIndex": -1,
+            "id": "f100fa65-9572-4933-acf2-cd9666b8b498",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary 1: Exams office",
@@ -70,8 +70,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "025513d5-cc5a-4952-a20c-a05e50716f8c",
             "zIndex": -1,
+            "id": "025513d5-cc5a-4952-a20c-a05e50716f8c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary 2:Campus Offic",
@@ -103,8 +103,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d96f6db9-0f84-40df-8aac-dfa91382a87b",
             "zIndex": -1,
+            "id": "d96f6db9-0f84-40df-8aac-dfa91382a87b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary 3:Faculty Printer room",
@@ -142,6 +142,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -225,7 +226,6 @@
               ]
             },
             "id": "8547967d-d4f9-478a-a609-65d5ff57ed2b",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "Exam Officer",
@@ -259,6 +259,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -342,7 +343,6 @@
               ]
             },
             "id": "70bf3cbb-2b93-4ca1-ad12-be8691e981cb",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Encrp.\nService",
@@ -383,26 +383,12 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [
-                {
-                  "id": "48a9412f-ee71-46d3-b389-f9db973edebb",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
+              "threats": [],
               "trustBoundaryIds": []
             },
             "labels": [
@@ -423,7 +409,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -444,13 +431,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "41728b32-bd60-41ea-9d75-a892b8edf9f1",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "labels": [
               "F3\n256-bit Key"
@@ -579,7 +585,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -600,13 +607,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "1bb1ad60-d769-41d0-acf4-f9847644f122",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F6 Printed\nPaper"
@@ -626,7 +652,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -647,16 +674,35 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "fdfb1c00-435c-43b4-9ce5-931c764bc5f6",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "f100fa65-9572-4933-acf2-cd9666b8b498",
                 "025513d5-cc5a-4952-a20c-a05e50716f8c"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "F2\nCiphertext\n+nonce"
@@ -696,6 +742,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -779,7 +826,6 @@
               ]
             },
             "id": "7b298d46-686b-408f-9c75-f250caf3549c",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "Key vault",
@@ -820,6 +866,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -903,7 +950,6 @@
               ]
             },
             "id": "52a8db40-6801-4c3f-835a-752799e50380",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Paper Store",
@@ -941,6 +987,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1024,7 +1071,6 @@
               ]
             },
             "id": "8412b2ee-cc94-44c4-a994-d8298cef6e80",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Print\nAgent",
@@ -1058,6 +1104,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1141,7 +1188,6 @@
               ]
             },
             "id": "cb89cfdd-272c-4802-869c-8b2f5476931b",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Printer Operator",
@@ -1159,6 +1205,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 6
   }
 }
